@@ -104,3 +104,10 @@ input[type=text]:focus {
 .accesskey {
     text-decoration: underline;
 }
+
+/* output element
+ */
+
+ output {
+     color: green;
+ }
