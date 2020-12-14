@@ -47,6 +47,42 @@
         <button id="btnsubmit" accesskey="S">Submit</button>
         <button id="btnreset" accesskey="R">Reset</button>
     </form>
+
+    <div>
+
+        <h1>Form field events and interaction</h1>
+        <p>Demonstrates how to handle form events and build inter-field relationships</p>
+        <form action="" autocomplete="off" id="theform">
+            <fieldset>
+                <legend>Event testing fields</legend>
+                <div>
+                    <label for="charcount">
+                        Character count:<input type="text" value="" id="charcount">
+                    </label>
+                    Count: <output name="count" id="count" for="charcount">0</output>
+                </div>
+                <div>
+                    <label for="searchfld">
+                        Search:<input type="search" id="searchfld">
+                    </label>
+                </div>
+                <div>
+                    <label for="cb1">Checkbox:<input type="checkbox" name="cb1" id="cb1" value="X"></label>
+                    <label for="rb1">Radiobutton 1:<input type="radio" name="rb1" id="rb1" value="A"></label>
+                    <label for="rb2">Radiobutton 2:<input type="radio" name="rb1" id="rb2" value="B"></label>
+                </div>
+                <div>
+                    <label for="numfld">Please enter a number:
+                        <input type="number" name="numfld" id="numfld" min="0" max="100" step="1">
+                    </label>
+                </div>
+            </fieldset>
+            <button id="btnsubmit">Submit</button>
+            <button id="btnreset">Reset</button>
+        </form>
+    </div>
+
+
 </body>
 <script src="./script.js"></script>
 </html>

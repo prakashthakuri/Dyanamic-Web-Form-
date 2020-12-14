@@ -42,3 +42,39 @@ function addKeyHint(element) {
 }
 
 window.addEventListener("load", addAccessKeyHints);
+
+// ------------------------------------------------------------
+
+window.addEventListener("load", (e) => {
+  let theForm = document.getElementById("theform");
+  let cb1 = document.getElementById("cb1");
+  letcharcount = document.getElementById("charcount");
+  let countfield = document.getElementById("count");
+
+  theForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
+  cb1.addEventListener("change", (e) => {
+    console.log(`checkbox change event: ${e.target.checked}`); //e.srcElement is depreciated and now used as event.target
+  });
+
+
+  charcount.addEventListener("input", (e) => { //input fires after the input is made, we can use "change" too for this
+    let count = charcount.value.length;
+    countfield.value = count;
+  });
+
+  let formListener = new FormEventListener(theForm)
+  theForm.addEventListener("click", formListener)
+});
+
+class FormEventListener {
+    constructor(fromElem) {
+        this.fromElem = fromElem
+    }
+
+    handleEvent(e) {
+        console.log(`event: ${e.type} on: ${e.target.tagName} for: ${this.fromElem.id}`)
+    }
+}
