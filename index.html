@@ -82,6 +82,35 @@
         </form>
     </div>
 
+    <div class="output-element">
+
+        <h1>Using the output element</h1>
+        <p>The output element can be used to display calculation results</p>
+        <form action="" autocomplete="off">
+            <fieldset>
+                <legend>Purchase a stock:</legend>
+                <div>
+                    <label for="symbol">
+                        Stock symbol:<input type="text" name="ticker" id="ticker" value="GOOG">
+                    </label>
+                    Quote: <span id="quote">50.00</span>
+                </div>
+                <div>
+                    <label for="quantity">Quantity:
+                        <input type="number" name="quantity" id="quantity" value="0">
+                    </label>
+                </div>
+                <div>
+                    <!-- TODO: add the output element -->
+                    Transaction amount:
+                    <output for 
+                </div>
+            </fieldset>
+            <button id="btnsubmit">Submit</button>
+            <button id="btnreset">Reset</button>
+        </form>
+    </div>
+
 
 </body>
 <script src="./script.js"></script>
