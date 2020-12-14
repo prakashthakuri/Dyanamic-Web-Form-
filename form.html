@@ -9,41 +9,44 @@
 <body>
     <h1>Form labels and field relationships</h1>
     <p>Demonstrates how to relate labels to fields and add basic interactivity to the form</p>
-    <form action="" autocomplete="off">
+    <form action="" autocomplete="off" id="testform">
         <fieldset>
             <legend>Please enter your personal information: </legend>
             <div>
-                <label for="field1">First name:
+                <label for="field1" accesskey="F">First name:
                     <input type="text" id="field1" autofocus placeholder="Prakash">
                 </label>
-                <label for="field2">Last name:
+                <label for="field2" accesskey="L">Last name:
                     <input type="text" id="field2" placeholder="Shahi">
                 </label>
             </div>
             <div>
-                <label for="field3">Address 1:
+                <label for="field3" accesskey="1">Address 1:
                     <input type="text" id="field3" size="40" placeholder="123 Main St">
                 </label>
             </div>
             <div>
-                <label for="field4">Address 2:
+                <label for="field4" accesskey="2">Address 2:
                     <input type="text" id="field4" size="40" placeholder="Apt:001">
                 </label>
             </div>
             <div>
-                <label for="field5">ZIP Code:
+                <label for="field5" accesskey="Z">ZIP Code:
                     <input type="text" id="field5" size="10" placeholder="12345">
                 </label>
             </div>
             <div>
-                <label for="field6">Phone:
+                <label for="field6" accesskey="P">Phone:
                     <input type="text" id="field6" placeholder="(012) 345-6789">
                 </label>
             </div>
+            <div class="policytext">
+                <p>You can review our <a href="#" accesskey="v">privacy policy</a></p>
+            </div>
         </fieldset>
-        <button id="btnsubmit">Submit</button>
-        <button id="btnreset">Reset</button>
+        <button id="btnsubmit" accesskey="S">Submit</button>
+        <button id="btnreset" accesskey="R">Reset</button>
     </form>
 </body>
-
+<script src="./script.js"></script>
 </html>

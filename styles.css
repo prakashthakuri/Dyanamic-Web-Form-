@@ -99,3 +99,8 @@ label:focus-within{
 input[type=text]:focus {
     border: 1px solid darkblue;
 }
+
+/* accesskey */
+.accesskey {
+    text-decoration: underline;
+}
