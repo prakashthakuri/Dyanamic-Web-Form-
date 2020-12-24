@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/dynamic_display.css">
+        
+    </head>
+    <body>
+        <h1>Dynamic Field Display</h1>
+        <p>Use scripting to dynamically enable/disable, show/hide, or manipulate form field types.</p>
+        <form action="" autocomplete="off" id="theform">
+            <h3>Expanding search field</h3>
+            <fieldset>
+                <legend>Enter a search term</legend>
+                <label for="searchfield">
+                    <input type="search" name="searchfield" id="searchfield" placeholder="Search...">
+                </label>
+            </fieldset>
+            <h3>Show / hide a password by changing field type</h3>
+            <fieldset>
+                <legend>Please log in:</legend>
+                <div>
+                    <label for="uname">Username:
+                        <input type="text" name="uname" id="uname">
+                    </label>
+                    <label for="pass">Password:
+                        <input type="password" name="pass" id="pass">
+                    </label>
+                    <label for="showpass">
+                        <input type="checkbox" name="showpass" id="showpass">Show
+                    </label>
+                </div>
+            </fieldset>
+            <h3>Enable and disable elements</h3>
+            <fieldset id="toppings">
+                <legend>Select your pizza toppings:</legend>
+                <div>
+                    <label for="showveg">
+                        <input type="checkbox" name="showveg" id="showveg">Vegetarian options only
+                    </label>
+                </div>
+                <div id="toppingitems">
+                    <div>
+                        <label for="pepperoni"><input type="checkbox" name="pprn" id="pepperoni">Pepperoni</label>
+                        <label for="sausage"><input type="checkbox" name="ssg" id="sausage">Sausage</label>
+                        <label for="meatball"><input type="checkbox" name="mtb" id="meatball">Meatball</label>
+                        <label for="ham"><input type="checkbox" name="ham" id="ham">Ham</label>
+                    </div>
+                    <div>
+                        <label for="olives"><input type="checkbox" name="olv" id="olives" data-veg>Olives</label>
+                        <label for="onions"><input type="checkbox" name="ons" id="onions" data-veg>Onions</label>
+                        <label for="spinach"><input type="checkbox" name="spch" id="spinach" data-veg>Spinach</label>
+                        <label for="peppers"><input type="checkbox" name="ppr" id="peppers" data-veg>Peppers</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+    <script src="./js/dynamicFieldDisplay.js"></script>
+</html>

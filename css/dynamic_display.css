@@ -1,0 +1,39 @@
+label.disabled {
+    color: darkgray;
+}
+
+#toppingitems {
+    padding-left: 1.2em;
+    padding-top: .5em;
+}
+
+#searchfield::placeholder {
+    color: #333;
+}
+
+#searchfield {
+    box-sizing: content-box;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+#searchfield {
+    background: #eee;
+    border: solid 1px #999;
+    border-radius: 3px;
+
+    padding: 4px 5px 4px 5px;
+    width: 6em;
+
+    /* TODO: add the transition */
+    transition: all .3s;
+
+}
+
+/* TODO: Add the focus state */
+#searchfield:focus {
+    width: 30em;
+    background-color: #fff;
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
